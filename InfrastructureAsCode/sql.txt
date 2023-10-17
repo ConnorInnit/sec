@@ -8,7 +8,7 @@ CREATE TABLE users (
 );
 
 CREATE TABLE users_details (
-    user_id UUID,
+    users_id UUID,
     phone_number integer NOT NULL,
     house_number integer NOT NULL,
     first_line varchar(50) NOT NULL,
