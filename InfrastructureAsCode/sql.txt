@@ -14,6 +14,6 @@ CREATE TABLE users_details (
     first_line varchar(50) NOT NULL,
     town varchar(50) NOT NULL,
     postcode varchar(8) NOT NULL,
-    FOREIGN KEY (user_id) REFERENCES users(id)
+    FOREIGN KEY (users_id) REFERENCES users(id)
 );
 
