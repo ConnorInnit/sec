@@ -102,15 +102,21 @@ export const Cards = () => {
               >
                 <input 
                     type='text' 
-                    placeholder='Enter SQL injection'
+                    placeholder='Please Enter SQL Injection Here'
                     required={true}
                     onChange={(e) => {setUserString(e.target.value)}}
-                    style={{
-                      width: '40rem'
-                    }}
+                    className="SQL-Input" //removed style from here and use it in cards.css
                 />
                 <br/>
-                <input type='submit' value='Inject'/>
+                <button
+                    className='inject-button'
+                    onSubmit={handleSubmit} //may need to be onClick
+                    
+                    //we need two differnt class names as when editing css we need to be able to edit both the button AND the text
+                    //i did the same for Toggle Also, just in case we decide to change something specific to the text only
+                >
+                    <span className="inject-button-text">Inject</span> 
+                    </button> 
               </form>
               <div>
                   {
@@ -124,7 +130,8 @@ export const Cards = () => {
                       onClick={() => {
                         setSafeRoute(!safeRoute)
                       }}
-                  >Toggle Route</button>
+                  ><span className="Toggle-button-text">Toggle Route</span> 
+                  </button>
               <div
                   className='output'
               >

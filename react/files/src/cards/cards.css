@@ -1,38 +1,102 @@
 .card{
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    margin: 4rem auto;
+    margin: 2rem auto;
     text-align: center;
-    gap: 3rem;
-    border: 5px solid;
+    gap: auto auto;
+    border: 7px solid;
     width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .navigationButtons{
     cursor: pointer;
-    border: 2px solid;
-    border-radius: 20rem;
-    width: 5rem;
+    border: 5px; /*doesnt seem to do anything*/
+    border-radius: 10rem Solid;
+    width: 8rem;
 }
 
 .navigationBanner{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: auto;
+    margin: auto auto;
     text-align: center;
     justify-items: center;
-    width: 50%;
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .output{
     border: 3px solid;
     width: 70%;
-    height: 10rem;
+    height: 9rem;
     margin: auto auto 2rem;
+    text-align: center;
 }
 
 .toggle{
-    margin: auto;
+    border: 2px solid;
+    margin: 0.9rem auto;
     width: 8rem;
     height: 3rem;
 }
+
+.SQL-Input{
+    margin: -1rem auto auto;
+    border: 2px solid;
+    font-size: 20px;
+    text-align: center;
+    width: 49rem;
+    height: 2rem;
+  }
+
+.inject-button{
+    border: 2px solid;
+    margin: 1rem;
+    width: 7rem;
+    height: 2.5rem;
+}
+
+.inject-button-text{
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+
+.Toggle-button-text{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.root{
+    /* Unsure what this does but i have it here anyway*/
+  }
+
+.card {
+    /* changes all card text properties components(font, size, border etc)*/
+  }
+
+h4 {
+    font-size: 1.7rem; /* changes only the Unprotected/Protected Route text as it is under heading of h4*/
+  }
+
+ p {
+    font-size: 1.15rem;  /* changes only heading underneath union attacks*/
+  }
+
+h2 {
+    font-size: 3rem;
+    /* changes the heading of attack type, this took me WAYYYY too long to realize i could even change the heading/paragraph components*/
+    /* only problem is it changes those stupid fucking arrow sizes aswell, WHY CSS WHY*/
+  }
+
+h3 {
+    font-size: 1.5rem;
+    text-align: center; /* precaution as it is already centred*/
+
+  }
+
+
+
+
+
